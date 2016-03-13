@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "paywall-off",
+    "version": "1.0",
+    "description": "Exibe partes da pÃ¡gina que estÃ£o originalmente ocultas pelo paywall.",
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    },
+    "background": {
+        "persistent": false,
+        "scripts": ["script.js"]
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "icons/icon19.png",
+            "38": "icons/icon38.png"
+        },
+        "default_title": "Mostrar conteÃºdos ocultos"
+    },
+    "permissions": [
+        "activeTab",
+        "background"
+    ]
+}
