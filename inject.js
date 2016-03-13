@@ -1,8 +1,11 @@
 var documentos = document.getElementsByTagName("link");
+var documentoInspecionado;
 
 for (var j = documentos.length; j >= 0; j--) {
 
-    if (documentos[j] && documentos[j].getAttribute("href") != null && documentos[j].getAttribute("href").indexOf("paywall") != -1)
-        documentos[j].parentNode.removeChild(documentos[j])
+    documentoInspecionado = documentos[j];
+
+    if (documentoInspecionado && documentoInspecionado.getAttribute("href") != null && documentoInspecionado.getAttribute("href").indexOf("paywall") != -1)
+        documentoInspecionado.parentNode.removeChild(documentoInspecionado)
 
 }
